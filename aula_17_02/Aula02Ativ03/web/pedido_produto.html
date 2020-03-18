@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Pedido Produto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="/atividade03/pedidoproduto">
+
+            <label for="cliente">Nome do cliente:</label><br>
+            <input id="cliente" name="cliente" type="text"><br><br>
+
+            <label for="cnpj">CNPJ:</label><br>
+            <input id="cnpj" name="cnpj" type="text"><br><br>
+
+            <label for="endereco">Endereço:</label><br>
+            <input id="endereco" name="endereco" type="text"><br><br>
+
+            <label for="produto">Produto:</label><br>
+            <input id="produto" name="produto" type="text"><br><br>
+
+            <label for="preco">Preço</label><br>
+            <input type="number" id="preco" name="preco"><br><br>
+
+            <label for="qtde">Quantidade:</label><br>
+            <input type="number" id="qtde" name="qtde"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
