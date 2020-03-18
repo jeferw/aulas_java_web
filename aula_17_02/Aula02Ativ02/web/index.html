@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Produtos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Caso o method não for informado no formulário-->
+        <!--O method padrão será o GET-->
+        <form action="/atividade/produtos">
+            <label for="pesquisa">Pesquisar:</label><br>
+            <input type="text" id="pesquisa" name="pesquisa"><br>
+
+            <input type="checkbox" id="precos" name="precos">
+            <label for="precos">Preços</label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
