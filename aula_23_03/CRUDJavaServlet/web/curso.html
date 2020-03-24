@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Adicionar Curso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="/crud/curso">
+
+            <label for="curso">Nome do Curso:</label><br>
+            <input id="curso" name="curso" type="text" maxlength="60" required ><br><br>
+
+            <label for="turno">Turno:</label><br>
+            <select id="turno" name="turno">
+                <option value="M">Manhã</option>
+                <option value="T">Tarde</option>
+                <option value="N">Noite</option>
+            </select><br><br>
+
+            <label for="qtdeEstudantes">Quantidade de Estudantes:</label><br>
+            <input id="qtdeEstudantes" name="qtdeEstudantes" type="number" ><br><br>
+
+            <label for="data">Data de Cadastro:</label><br>
+            <input id="data" name="data" type="date" required><br><br>
+
+            <input name="acao" value="inserir" type="hidden"> 
+
+            <input type="submit" value="Salvar Curso">
+        </form><br>
+
+        <a href="/crud/curso">Listar Cursos</a>  
+
+    </body>
+</html>
