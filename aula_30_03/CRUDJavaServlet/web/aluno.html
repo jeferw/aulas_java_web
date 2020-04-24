@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Adicionar Curso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="/crud/aluno">
+
+            <label for="aluno">Nome do Aluno</label><br>
+            <input id="aluno" name="aluno" type="text" maxlength="60" required ><br><br>
+
+            <label for="datanascimento">Data de Nascimento</label><br>
+            <input id="datanascimento" name="datanascimento" type="date" required><br><br>
+            
+             <label for="idcurso">Código Curso:</label><br>
+            <input id="idcurso" name="idcurso" type="number" ><br><br>
+
+            <input name="acao" value="inserir" type="hidden"> 
+
+            <input type="submit" value="Salvar Aluno">
+        </form><br>
+
+        <a href="/crud/aluno">Listar Alunos</a>  
+
+    </body>
+</html>
