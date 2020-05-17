@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exibindo Imagens</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/ServletImagem/css/estilos.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h3>Exibindo uma Imagem com Servlet</h3>
+            <!--
+                Adicionar no src das imagens o caminho do Servlet desejado que está implantado no servidor;
+                É possível enviar parametros na requsição, como por exemplo, o código de uma tabela, um tipo, ou o nome do arquivo
+            -->
+            <img src="/ServletImagem/retornaimagem?tipo=produto&cproduto=17" alt="Imagem 17" >
+            <img src="/ServletImagem/retornaimagem?tipo=produto&cproduto=24" alt="Imagem 24" >
+            <img src="/ServletImagem/retornaimagem?tipo=produto&cproduto=31" alt="Imagem 31" >
+        </div>
+    </body>
+</html>
